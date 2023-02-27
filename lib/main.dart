@@ -21,6 +21,5 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//// my to do app which are made with the help of chatGPT ...----------------------->>>>>>>
 /// using shared preference and provider
 /// and also using model
