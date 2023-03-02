@@ -27,16 +27,18 @@ class TasksScreen extends StatelessWidget {
               ),
             ),
           ),
-          ElevatedButton(
-            onPressed: () {
-              final taskName = taskNameController.text;
-              if (taskName.isNotEmpty) {
-                taskData.addTask(taskName);
-                taskNameController.clear();
-              }
-            },
-            child: const Text('Add Task'),
-          ),
+          FloatingActionButton(
+              shape: const BeveledRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(35)),
+              ),
+              onPressed: () {
+                final taskName = taskNameController.text;
+                if (taskName.isNotEmpty) {
+                  taskData.addTask(taskName);
+                  taskNameController.clear();
+                }
+              },
+              child: const Text("Add",style: TextStyle(fontSize: 20),)),
           Expanded(
             child: ListView.builder(
               itemCount: taskData.tasks.length,
