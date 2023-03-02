@@ -22,4 +22,4 @@ class MyApp extends StatelessWidget {
 }
 
 /// using shared preference and provider
-/// and also using model
+
